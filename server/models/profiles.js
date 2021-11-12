@@ -9,10 +9,10 @@ class Profile {
         this.email = data.email;
     }
 
-    static get all() {
-        const profiles = profileData.map((profile) => new Profile(profile))
-        return profiles
-    }
+    // static get all() {
+    //     const profiles = profileData.map((profile) => new Profile(profile))
+    //     return profiles
+    // }
 
     static get names(){
         const profiles = profileData.map((profile)=> profile.name)

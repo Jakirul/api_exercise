@@ -29,7 +29,7 @@ describe("API Server", () => {
         request(api)
             .get('/Name1')
             .expect(200)
-            .expect({ name: 'Name1', age: 21, email: 'test@gmail.com'}, done);
+            .expect({ id:1, name: 'Name1', age: 21, email: 'test@gmail.com'}, done);
     });
 
     it('responds to a unknown profile name', (done) => {

@@ -13,12 +13,9 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
     const data = req.body;
-    console.log("in the post route")
     const newProfile = Profile.create(data);
     res.status(201).send(newProfile);
 });
-
-
 
 app.get('/:name', (req, res) => {
     try {
